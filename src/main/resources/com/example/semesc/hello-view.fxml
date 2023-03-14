@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semesc.Controller">
+   <children>
+      <ListView fx:id="listView" layoutY="9.0" prefHeight="530.0" prefWidth="359.0" />
+      <Button fx:id="btnGeneruj" layoutX="373.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnGenerujOA" text="Generuj" />
+      <Button fx:id="btnImport" layoutX="498.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnImportOA" text="Import data" textAlignment="CENTER" />
+      <Button fx:id="btnExport" layoutX="589.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnExportOA" text="Export dat" />
+      <Button fx:id="btnZrus" layoutX="441.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnZrusOA" text="Zruš" />
+      <Label layoutX="385.0" layoutY="101.0" text="Název" />
+      <Label layoutX="374.0" layoutY="130.0" text="Souřadnice N" />
+      <Label layoutX="375.0" layoutY="169.0" text="Souřadnice E" />
+      <TextField fx:id="tfNazev" layoutX="463.0" layoutY="97.0" promptText="Pepa" />
+      <TextField fx:id="tfN" layoutX="463.0" layoutY="135.0" promptText="50.546545646" />
+      <TextField fx:id="tfE" layoutX="463.0" layoutY="165.0" promptText="14.654684" />
+      <Label layoutX="364.0" layoutY="70.0" text="Vlož zámek">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="btnVloz" layoutX="659.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnVlozOA" text="Vlož" />
+      <Label layoutX="373.0" layoutY="219.0" text="Najdi zámek">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="265.0" text="Klíč" />
+      <TextField fx:id="tfNajdi" layoutX="458.0" layoutY="261.0" promptText="Gps nebo Nazev" />
+      <Button fx:id="btnNajdi" layoutX="390.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnNajdiOA" text="Najdi" />
+      <Button fx:id="btnNajdi1" layoutX="498.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnNajdiNejOA" text="Najdi nejbližší" />
+      <Label layoutX="373.0" layoutY="340.0" text="Odeber zámek">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="367.0" text="Klíč" />
+      <TextField fx:id="tfOdeber" layoutX="475.0" layoutY="363.0" promptText="Gps nebo Nazev" />
+      <Button fx:id="btnOdeber" layoutX="659.0" layoutY="363.0" mnemonicParsing="false" onAction="#btnOdeberOA" text="Odeber" />
+      <Button fx:id="btnZmenaKlice" layoutX="577.0" layoutY="420.0" mnemonicParsing="false" onAction="#btnZmenaKliceOA" text="Změna klíče" />
+      <ComboBox fx:id="cb" layoutX="391.0" layoutY="421.0" onAction="#cbOA" prefWidth="150.0" />
+      <Button fx:id="btnPrebuduj" layoutX="513.0" layoutY="461.0" mnemonicParsing="false" onAction="#btnPrebudujOA" text="Přebuduj" />
+      <Button fx:id="btnIterator" layoutX="579.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnIteratorOA" text="Změna iterátoru" />
+      <ComboBox fx:id="cb1" layoutX="393.0" layoutY="496.0" onAction="#cb1OA" prefWidth="150.0" />
+      <ListView fx:id="listViewHalda" layoutX="856.0" layoutY="1.0" prefHeight="540.0" prefWidth="208.0" />
+      <Button fx:id="btnZrus1" layoutX="679.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnZrus1OA" text="Zruš haldu" />
+      <Button fx:id="btnNajdiHalda" layoutX="617.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnNajdiHaldaOA" text="Najdi pomocí haldy" />
+      <Button fx:id="btnOdeberMax" layoutX="720.0" layoutY="363.0" mnemonicParsing="false" onAction="#btnOdeberMaxOA" text="Odeber max prioritu" />
+      <Button fx:id="btnIterator1" layoutX="703.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnIterator1OA" text="Změna iterátoru haldy" />
+      <Button fx:id="btnVloz1" layoutX="657.0" layoutY="165.0" mnemonicParsing="false" onAction="#btnVloz1OA" text="Vlož do haldy" />
+   </children>
+</Pane>
